@@ -16,6 +16,7 @@ export function useSubmitBatch(
         batch_id: batch,
         cleaned_items: items.filter((item) => item.is_valid !== false),
       }).then((res) => res.data),
+      retry: 1,
     onSuccess: (data: any) => onSuccess?.(data.validation.score ?? null),
   });
 }

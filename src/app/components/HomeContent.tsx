@@ -9,6 +9,7 @@ import BatchControls from "./BatchControl";
 import RawDataPanel from "./RawDataPanel";
 import ScoreSection from "./ScoreSection";
 import CleanedTable from "./CleanedTable";
+import Spinner from "./Spinner";
 
 export default function HomeContent() {
   const [batch, setBatch] = useState("1");
@@ -66,6 +67,8 @@ export default function HomeContent() {
 
   return (
     <main className="min-h-screen bg-slate-950">
+      
+
       <div className="py-12 px-4 sm:px-6 lg:px-10">
         <div className="max-w-7xl mx-auto space-y-10">
           <header className="text-center space-y-4 pb-6">

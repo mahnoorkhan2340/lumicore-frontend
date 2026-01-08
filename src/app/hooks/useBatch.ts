@@ -5,7 +5,6 @@ import axios from "axios";
 import API_ENDPOINTS from "../lib/apiConfig";
 import { FetchResponse } from "../../../types";
 
-
 export function useFetchBatch(
   batch: string,
   options?: UseQueryOptions<FetchResponse>
