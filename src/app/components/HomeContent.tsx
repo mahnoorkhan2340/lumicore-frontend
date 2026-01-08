@@ -19,7 +19,6 @@ export default function HomeContent() {
     setNormalized(data.items)
   );
 
-  console.log("Normalized Data:", normalized);
   const submitMutation = useSubmitBatch(batch, setScore);
   const handleFetch = useCallback(async () => {
     setScore(null);
