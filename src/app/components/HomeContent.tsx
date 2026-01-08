@@ -6,7 +6,6 @@ import { useFetchBatch } from "../hooks/useBatch";
 import { useNormalizeData } from "../hooks/useNormalizeData";
 import { useSubmitBatch } from "../hooks/useSubmitBatch";
 import BatchControls from "./BatchControl";
-import DataPanels from "./DataPanels";
 import RawDataPanel from "./RawDataPanel";
 import ScoreSection from "./ScoreSection";
 import CleanedTable from "./CleanedTable";
@@ -19,6 +18,8 @@ export default function HomeContent() {
   const normalizeMutation = useNormalizeData((data) =>
     setNormalized(data.items)
   );
+
+  console.log("Normalized Data:", normalized);
   const submitMutation = useSubmitBatch(batch, setScore);
   const handleFetch = useCallback(async () => {
     setScore(null);
