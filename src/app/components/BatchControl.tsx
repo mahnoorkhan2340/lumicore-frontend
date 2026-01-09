@@ -15,7 +15,6 @@ export default function BatchControls({
   fetchQuery,
   normalizePending,
 }: BatchControlsProps) {
-  console.log("fetchQuery:", fetchQuery)
   const isLoading = fetchQuery.isFetching
   const isDisabled = isLoading || normalizePending
 
