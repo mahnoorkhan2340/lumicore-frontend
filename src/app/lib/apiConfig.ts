@@ -7,6 +7,8 @@ export const API_ENDPOINTS = {
   SUBMIT: `${BACKEND_URL}/api/submit/`,
 } as const;
 
+export default API_ENDPOINTS;
+
 // export const API_ENDPOINTS = {
 //   FETCH: `${LOCAL_API_URL}/api/data`,
 //   NORMALIZE: `${LOCAL_API_URL}/api/normalize/`,
