@@ -79,7 +79,6 @@ Configure the following environment variables in `.env.example`:
 
 ```
 NEXT_PUBLIC_BACKEND_URL=<backend-api-url>
-NEXT_PUBLIC_NORMALIZE_RENDER_URL=<backend-render-api-url>
 ```
 
 ## API Endpoints

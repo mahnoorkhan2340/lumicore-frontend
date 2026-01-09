@@ -13,10 +13,9 @@ export function useFetchBatch(
     queryKey: ["fetch", batch],
     queryFn: async () => {
       const response = await axios.get(`${API_ENDPOINTS.FETCH}?batch=${batch}`);
-      return { raw: response.data.records };
+      return { raw: response.data.raw.records };
     },
     enabled: false,
-    retry: 1,
     ...options,
   });
 }
