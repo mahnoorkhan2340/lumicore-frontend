@@ -9,7 +9,6 @@ import BatchControls from "./BatchControl";
 import RawDataPanel from "./RawDataPanel";
 import ScoreSection from "./ScoreSection";
 import CleanedTable from "./CleanedTable";
-import Spinner from "./Spinner";
 
 export default function HomeContent() {
   const [batch, setBatch] = useState("1");
